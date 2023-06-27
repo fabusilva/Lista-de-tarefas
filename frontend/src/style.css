@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0;
+    background-color: #282a36;
+    color: #f8f8f2;
+  }
+  
+  .container {
+    width: 400px;
+    margin-top: 40px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 8px;
+    color: #bd93f9;
+  }
+  
+  input,
+  textarea,
+  button {
+    margin-bottom: 16px;
+    background-color: #44475a;
+    color: #f8f8f2;
+    border: none;
+    padding: 8px;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px #bd93f9;
+  }
+  
+  button {
+    background-color: #6272a4;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #bd93f9;
+  }
+  
+  h2 {
+    margin-top: 40px;
+    color: #bd93f9;
+  }
+  
+  p {
+    margin-top: 16px;
+  }
+  
+  .task {
+    border: 1px solid #44475a;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #44475a;
+    text-align: center;
+  }
+  
+  .task strong {
+    display: block;
+    color: #f8f8f2;
+    margin-bottom: 10px;
+  }
+  
+  .task button {
+    background-color: #6272a4;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .task button:hover {
+    background-color: #bd93f9;
+  }
