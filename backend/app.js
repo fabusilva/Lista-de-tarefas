@@ -68,8 +68,10 @@ app.delete('/tarefas/:id', async(req, res) =>{
 //Atualizando tarefa
 app.put('/tarefas/:id', async (req,res) =>{
   try {
-    const updates = req.body;
-    const tarefa = await db.collection('tarefas').updateOne({ _id: new ObjectId(req.params.id) },{$set:{updates}});
+    const nome = req.body.nome;
+    const descricao = req.body.descricao;
+    const updates = {nome,descricao};
+    const tarefa = await db.collection('tarefas').updateOne({ _id: new ObjectId(req.params.id) },{$set:updates});
     res.status(200).json({msg:`Tarefa ${updates.nome} foi atualizada!`});
   } catch (error) {
     console.log(error);
